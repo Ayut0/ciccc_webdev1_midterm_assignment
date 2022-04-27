@@ -1,0 +1,17 @@
+// Base Style
+
+body{
+    font-family: 'Alumni Sans', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+//Centered
+.content-width{
+    width: 90%;
+    margin: 0 auto;
+    max-width: $contentMaxWidth;
+}

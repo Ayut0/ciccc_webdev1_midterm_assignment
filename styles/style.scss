@@ -1,0 +1,23 @@
+//Mobile first
+@import "./Breakpoints/base";
+
+//Smartphone horizontal
+@media (min-width: 480px){
+   @import "./Breakpoints/480up";
+}
+
+//Tablets
+@media (min-width: 600px){
+   @import "./Breakpoints/600up";
+}
+
+//Desktop
+@media (min-width: 1280px){
+   @import "./Breakpoints/1280up";
+}
+
+//Retina
+@media (min-resolution: 192dpi),
+(-webkit-min-device-pixel-ratio: 2){
+   @import "./Breakpoints/2x";
+}
