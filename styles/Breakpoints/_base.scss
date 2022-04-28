@@ -42,3 +42,117 @@ img{
 .font-email{
     font-size: 24px;
 }
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $cHeaderBg;
+    height: 10vh;
+
+    &__inner{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        .logo{
+            display: flex;
+            align-items: center;
+            &__img{
+                width: 15%;
+            }
+
+            &__name{
+                color: $cHeadline;
+                font-size: 2rem;
+                font-weight: bold;
+            }
+        }
+    }
+
+    input{
+        display: none;
+    }
+}
+
+.mobile-menu{
+    position: fixed;
+    width: 100%;
+    height: 91%;
+    background-color: $cHeaderBg;
+    opacity: .9;
+    top: -100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    transform: scale(0);
+
+    &__btn{
+        position: relative;
+        top: -4.5em;
+        right: -87%;
+        margin-left: -2em;
+        margin-top: 45px;
+        width: 2em;
+        height: 45px;
+        z-index: 5;
+        div{
+            width: 2rem;
+            height: .4em;
+            border-radius: 3px;
+            background-color: $cHeadline;
+            margin-bottom: .2em;
+        }
+    }
+
+    &__main{
+        position: relative;
+        overflow: hidden;
+        overflow-y: auto;
+        height: 100%;
+
+        ul{
+            text-align: left;
+            margin-left: 25%;
+
+            li{
+                list-style: none
+            }
+
+            li > a{
+                position: relative;
+                text-decoration: none;
+                color: $cHeadline;
+                display: inline-block;
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+#toggle:checked{
+    +.mobile-menu__btn{
+        .top{
+            transform: rotate(-45deg);
+            margin-top: 10px;
+        }
+
+        .middle{
+            opacity: 0;
+            transform: rotate(45deg);
+        }
+
+        .bottom{
+            transform: rotate(45deg);
+            margin-top: -19px;
+        }
+
+        +.mobile-menu{
+            top: 9%;
+            transform: scale(1);
+        }
+    }
+
+}
