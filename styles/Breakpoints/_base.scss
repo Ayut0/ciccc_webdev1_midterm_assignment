@@ -43,6 +43,11 @@ img{
     font-size: 24px;
 }
 
+h2{
+    color:$cHeading;
+    @extend .font-heading-mobile;
+}
+
 .header{
     position: fixed;
     top: 0;
@@ -172,12 +177,44 @@ main{
             .phrase{
                 @extend .font-intro-sm;
                 color: $cHeadline;
-                letter-spacing: 0.1em;
+                letter-spacing: .1em;
                 .myName{
                     color: $cHighlight;
                     font-size: 1.5em;
                     font-weight: 800;
                 }
+            }
+
+            .linkBtns{
+                margin-top: 1em;
+            }
+        }
+    }
+
+    .aboutMe{
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        background-color: $cBgLightPattern1;
+
+        &__inner{
+            @extend .content-width;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+
+            .title{
+                text-align: center;
+                margin: .5em;
+            }
+
+            .intro{
+                font-size: 1.5em;
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
             }
         }
     }

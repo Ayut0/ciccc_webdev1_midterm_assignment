@@ -1,15 +1,11 @@
-.linkBtns{
-    margin-top: 1em;
-    
-    .btn{
-        background-color: $cHighlight;
-        color: $cHeadline;
-        border: 1px solid black;
-        font-size: 1.8em;
-        padding: 0.1em 0.7em;
-        border-radius: 20px;
-        font-weight: 700;
-        cursor: pointer;
-    }
+.btn{
+    background-color: $cHighlight;
+    color: $cHeadline;
+    border: 1px solid $cHighlight;
+    font-size: 1.8em;
+    padding: 0.1em 0.7em;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
 }
 
