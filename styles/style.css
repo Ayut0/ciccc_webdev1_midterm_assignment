@@ -17,7 +17,7 @@ img {
   font-size: 68px;
 }
 
-.font-intro-sm {
+.font-intro-sm, main .aboveTheFold__inner .phrase {
   font-size: 32px;
 }
 
@@ -137,4 +137,18 @@ img {
 #toggle:checked + .mobile-menu__btn + .mobile-menu {
   top: 9%;
   transform: scale(1);
+}
+
+main {
+  margin-top: 5rem;
+}
+main .aboveTheFold {
+  background-color: #0f0e17;
+  height: 50vh;
+}
+main .aboveTheFold__inner .phrase {
+  color: #FFFFFE;
+}
+main .aboveTheFold__inner .phrase .myName {
+  color: #FF8906;
 }/*# sourceMappingURL=style.css.map */
