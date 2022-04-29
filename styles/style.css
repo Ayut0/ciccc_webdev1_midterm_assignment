@@ -186,7 +186,7 @@ main .aboveTheFold__inner .linkBtns {
   margin-top: 1em;
 }
 main .aboutMe {
-  height: 180vh;
+  padding-bottom: 32px;
   display: flex;
   justify-content: center;
   background-color: #FBFBF1;
@@ -245,6 +245,7 @@ main .skills {
   background-color: #FDF5DF;
   display: flex;
   justify-content: center;
+  padding-bottom: 32px;
 }
 main .skills__inner .title {
   text-align: center;
@@ -277,4 +278,11 @@ main .skills__contents .skill-box .skill-list {
   display: flex;
   flex-wrap: wrap;
   font-size: 1.5rem;
+}
+main .skills__contents .skill-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  gap: 2em;
 }/*# sourceMappingURL=style.css.map */
