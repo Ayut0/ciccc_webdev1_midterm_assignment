@@ -55,6 +55,7 @@ h2{
     width: 100%;
     background-color: $cHeaderBg;
     height: 9vh;
+    z-index: 10;
 
     &__inner{
         display: flex;
@@ -96,7 +97,7 @@ h2{
 
     &__btn{
         position: relative;
-        top: -4.5em;
+        top: -4em;
         right: -87%;
         margin-left: -2em;
         margin-top: 45px;
@@ -163,7 +164,7 @@ h2{
 }
 
 main{
-    margin-top: 4.6rem;
+    margin-top: 3rem;
     .aboveTheFold{
         background-color: $cBgLightTop;
         height: 80vh;
@@ -192,7 +193,7 @@ main{
     }
 
     .aboutMe{
-        height: 90vh;
+        height: 180vh;
         display: flex;
         justify-content: center;
         // align-items: center;
@@ -215,6 +216,87 @@ main{
                 display: flex;
                 flex-direction: column;
                 gap: 1em;
+            }
+
+            .logo__container{
+                display: flex;
+                justify-content: space-between;
+                width: 40%;
+                .logo{
+                    color: #000000;
+                }
+                a{
+                    text-decoration: none;
+                    cursor: pointer;
+                    &:hover{
+                        opacity: .6;
+                    }
+                }
+            }
+
+            .pic{
+                text-align: center;
+                margin-top: 3em;
+                position: relative;
+
+                img{
+                    width: 60%;
+                    position: absolute;
+                    top: 20px;
+                    left: 4em;
+                    z-index: 2;
+                }
+
+                & .rectangle{
+                    background-color: #ffd699;
+                    padding: 10px;
+                    height: 230px;
+                    width: 150px;
+                    transform: translateX(100px) translateY(20px) rotate(10deg);
+                }
+            }
+        }
+    }
+
+    .skills{
+        background-color: $cBgLightPattern2;
+        display: flex;
+        justify-content: center;
+        &__inner{
+            .title{
+                text-align: center;
+                margin: .5em;
+            }
+        }
+        &__contents{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .skill-box{
+                position: relative;
+                margin: 2em 0;
+                padding: 1.5em 1em;
+                border:  solid 1px black;
+                border-radius: 8px;
+                width: 75%;
+
+                .box-title{
+                    position: absolute;
+                    font-size: 1.5rem;
+                    top: -8px;
+                    left: 10px;
+                    padding: 0 9px;
+                    line-height: 1;
+                    background-color: $cBgLightPattern2;
+                }
+
+                .skill-list{
+                    width: 90%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    font-size: 1.5rem;
+                }
             }
         }
     }
