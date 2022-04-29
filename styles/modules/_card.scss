@@ -1,0 +1,48 @@
+.card{
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 1em;
+    margin-bottom: 32px;
+
+    .project-image{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 2em;
+    }
+
+    .project-lang{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        // justify-content: center;
+        gap: 1em;
+        margin: 0 auto;
+        width: 92%;
+
+        .lang-box{
+            border: 1px solid;
+            padding: 0.1em 0.4em;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+    }
+
+    .project-description{
+        h4{
+            font-size: 1.3rem;
+        }
+    }
+
+    .project-links{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        column-gap: 1em;
+        .btn{
+            background-color: $cProjectBtnBg;
+            font-size: 1.5em;
+            border-color: $cProjectBtnBg;
+        }
+    }
+}

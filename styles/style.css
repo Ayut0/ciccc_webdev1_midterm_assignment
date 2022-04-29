@@ -12,6 +12,48 @@
   opacity: 0.8;
 }
 
+.card {
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  padding-bottom: 1em;
+  margin-bottom: 32px;
+}
+.card .project-image {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+.card .project-lang {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1em;
+  margin: 0 auto;
+  width: 92%;
+}
+.card .project-lang .lang-box {
+  border: 1px solid;
+  padding: 0.1em 0.4em;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+.card .project-description h4 {
+  font-size: 1.3rem;
+}
+.card .project-links {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+}
+.card .project-links .btn {
+  background-color: #93A8A9;
+  font-size: 1.5em;
+  border-color: #93A8A9;
+}
+
 body {
   font-family: "Alumni Sans", sans-serif;
 }
@@ -21,7 +63,7 @@ img {
   vertical-align: bottom;
 }
 
-.content-width, main .aboutMe__inner {
+.content-width, main .projects__inner, main .aboutMe__inner {
   width: 90%;
   margin: 0 auto;
   max-width: 1100px;
@@ -285,4 +327,19 @@ main .skills__contents .skill-logos {
   justify-content: space-between;
   width: 80%;
   gap: 2em;
+}
+main .projects {
+  background-color: #FBFBF1;
+  padding-top: 1em;
+  padding-bottom: 32px;
+}
+main .projects__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .projects__inner .title {
+  text-align: center;
+  margin: 0.5em;
 }/*# sourceMappingURL=style.css.map */

@@ -309,4 +309,21 @@ main{
             }
         }
     }
+
+    .projects{
+        background-color: $cBgLightPattern1;
+        padding-top: 1em;
+        padding-bottom: 32px;
+        &__inner{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            @extend .content-width;
+            .title{
+                text-align: center;
+                margin: .5em;
+            }
+        }
+    }
 }
