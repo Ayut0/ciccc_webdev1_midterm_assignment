@@ -193,10 +193,9 @@ main{
     }
 
     .aboutMe{
-        height: 180vh;
+        padding-bottom: 32px;
         display: flex;
         justify-content: center;
-        // align-items: center;
         background-color: $cBgLightPattern1;
 
         &__inner{
@@ -262,6 +261,7 @@ main{
         background-color: $cBgLightPattern2;
         display: flex;
         justify-content: center;
+        padding-bottom: 32px;
         &__inner{
             .title{
                 text-align: center;
@@ -297,6 +297,15 @@ main{
                     flex-wrap: wrap;
                     font-size: 1.5rem;
                 }
+
+            }
+
+            .skill-logos{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 80%;
+                gap: 2em;
             }
         }
     }
