@@ -326,4 +326,26 @@ main{
             }
         }
     }
+
+    .qualification{
+        background-color: $cBgLightPattern2;
+        padding-top: 1em;
+        padding-bottom: 32px;
+
+        &__inner{
+            font-size: 1.3rem;
+            @extend .content-width;
+            .title{
+                text-align: center;
+                margin: .5em;
+            }
+
+            .education-detail{
+                .course-name{
+                    font-weight: 600;
+                }
+            }
+        }
+
+    }
 }
