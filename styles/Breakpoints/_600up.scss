@@ -32,10 +32,15 @@ main{
     .aboveTheFold{
         &__inner{
             flex-direction: row;
-    
             .phrase{
                 font-size: 3rem;
             }
+        }
+    }
+
+    .aboutMe{
+        &__inner{
+            flex-direction: row;
         }
     }
 }
