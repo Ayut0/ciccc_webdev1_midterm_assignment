@@ -74,6 +74,17 @@ h2{
                 font-weight: bold;
             }
         }
+
+        .header-menu{
+            display: none;
+            &__item{
+                list-style: none;
+                a{
+                    color: $cHeadline;
+                    text-decoration: none;
+                }
+            }
+        }
     }
 
     input{
