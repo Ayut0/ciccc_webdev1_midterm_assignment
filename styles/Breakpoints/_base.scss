@@ -331,12 +331,12 @@ main{
         background-color: $cBgLightPattern2;
         padding-top: 1em;
         padding-bottom: 32px;
+        text-align: center;
 
         &__inner{
             font-size: 1.3rem;
             @extend .content-width;
             .title{
-                text-align: center;
                 margin: .5em;
             }
 
@@ -346,6 +346,80 @@ main{
                 }
             }
         }
-
     }
+
+    .contact{
+        background-color: $cBgLightPattern1;
+        padding-top: 1em;
+        padding-bottom: 32px;
+        &__inner{
+            font-size: 1.3rem;
+            @extend .content-width;
+            .title{
+                text-align: center;
+                margin: .5em;
+            }
+
+            .appreciation-message{
+                margin-bottom: 24px;
+            }
+
+            .email, .contact__inner-logos{
+                a{
+                    color: #000000;
+                    text-decoration: none;
+                    cursor: pointer;
+                    &:hover{
+                        color: $cHighlight;
+                    }
+                }
+            }
+
+            .email{
+                padding-bottom: 24px;
+                text-align: center;
+                cursor: pointer;
+                
+                span{
+                    position: relative;
+                    @extend .font-email;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        height: 2px;
+                        left: 0em;
+                        bottom: -3px;
+                        width: 100%;
+                        background-color: $cHighlight;
+                        transform: scale(0, 1);
+                        transform-origin: left top;
+                        transition: transform .3s;
+                    }
+                    &:hover::after{
+                        transform: scale(1,1);
+                    }
+                }
+            }
+
+            .contact-links{
+                .contact__inner-logos{
+                    display: flex;
+                    justify-content: center;
+                    column-gap: 1em;
+                    padding-top: 32px;
+                    .sns{
+                        &:hover{
+                            transform: scale(1.3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer{
+    background-color: $cBgLightPattern2;
+    text-align: center;
+    padding: .5em 0;
 }
