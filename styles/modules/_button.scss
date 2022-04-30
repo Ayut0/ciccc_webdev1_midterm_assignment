@@ -1,7 +1,7 @@
 .btn{
     background-color: $cHighlight;
     color: $cHeadline;
-    border: 1px solid $cHighlight;
+    border: .1px solid $cHighlight;
     font-size: 1.8em;
     padding: 0.1em 0.7em;
     border-radius: 20px;
@@ -9,7 +9,9 @@
     cursor: pointer;
 
     &:hover{
-        opacity: .8;
+        // opacity: .8;
+        color: $cHighlight;
+        background-color: $cHeadline;
     }
 }
 
