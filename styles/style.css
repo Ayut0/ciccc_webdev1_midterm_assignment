@@ -127,6 +127,16 @@ h2 {
   font-size: 2rem;
   font-weight: bold;
 }
+.header__inner .header-menu {
+  display: none;
+}
+.header__inner .header-menu__item {
+  list-style: none;
+}
+.header__inner .header-menu__item a {
+  color: #FFFFFE;
+  text-decoration: none;
+}
 .header input {
   display: none;
 }
@@ -419,4 +429,34 @@ main .contact__inner .contact-links .contact__inner-logos .sns:hover {
   background-color: #FDF5DF;
   text-align: center;
   padding: 0.5em 0;
+}
+
+@media (min-width: 600px) {
+  .header__inner .logo__img {
+    width: 10%;
+  }
+  .header__inner .header-menu {
+    display: block;
+    width: 60%;
+  }
+  .header__inner .header-menu ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+  .header__inner .header-menu ul li > a {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .header .mobile-menu__btn {
+    display: none;
+  }
+
+  main .aboveTheFold__inner {
+    flex-direction: row;
+  }
+  main .aboveTheFold__inner .phrase {
+    font-size: 3rem;
+  }
 }/*# sourceMappingURL=style.css.map */
