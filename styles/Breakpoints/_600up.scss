@@ -17,7 +17,7 @@
                 padding: 0;
                 ;
                 li > a{
-                    font-size: 1.3rem;
+                    font-size: 1.7rem;
                     font-weight: 600;
                 }
             }
@@ -28,12 +28,17 @@
         display: none;
     }
 }
+
+h2{
+    font-size: 60px;
+}
+
 main{
     .aboveTheFold{
         &__inner{
             flex-direction: row;
             .phrase{
-                font-size: 3rem;
+                font-size: 4rem;
             }
         }
     }
@@ -41,6 +46,29 @@ main{
     .aboutMe{
         &__inner{
             flex-direction: row;
+
+            .intro-part{
+                width: 50%;
+
+                .intro-sentence{
+                    font-size: 1.7em;
+                }
+            }
+
+            .pic{
+                width: 50%;
+
+                .rectangle{
+                    height: 24rem;
+                    width: 56%;
+                }
+
+                // img{
+                //     width: 85%;
+                //     top: 80px;
+                //     left: 0em;
+                // }
+            }
         }
     }
 }
