@@ -1,1 +1,17 @@
 // Desktop
+main{
+    .aboutMe{
+        %__inner{
+            flex-direction: row;
+
+            .pic{
+                width: 50%;
+
+                .rectangle{
+                    height: 24rem;
+                    width: 56%;
+                }
+            }
+        }
+    }
+}
