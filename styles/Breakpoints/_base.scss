@@ -30,14 +30,6 @@ img{
     font-size: 48px;
 }
 
-.font-bg{
-    font-size: 20px;
-}
-
-.font-sm{
-    font-size: 12px;
-}
-
 .font-email{
     font-size: 24px;
     font-weight: 600;
@@ -88,7 +80,6 @@ h2{
                 a{
                     color: $cHeadline;
                     text-decoration: none;
-
                 }
             }
         }
@@ -121,7 +112,6 @@ h2{
             transform: scale(1);
         }
     }
-
 }
 
 main{
