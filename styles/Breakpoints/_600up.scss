@@ -71,4 +71,45 @@ main{
             }
         }
     }
+
+    .skills{
+        &__contents{
+            flex-direction: row;
+            gap: 1em;
+            .skill-box{
+                width: auto;
+            }
+        }
+    }
+
+    .projects{
+        &__inner{
+            .project__card-container{
+                .card{
+                    .project-image{
+                        img{
+                            width: 70%;
+                        }
+                    }
+                    .project-lang{
+                        .lang-box{
+                            font-size: 2rem;
+                        }
+                    }
+
+                    .project-description{
+                        h4{
+                            font-size: 2.5rem;
+                        }
+                    }
+
+                    .project-links{
+                        .btn{
+                            font-size: 2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
