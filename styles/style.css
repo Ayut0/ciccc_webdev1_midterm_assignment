@@ -142,14 +142,6 @@ img {
   font-size: 48px;
 }
 
-.font-bg {
-  font-size: 20px;
-}
-
-.font-sm {
-  font-size: 12px;
-}
-
 .font-email, main .contact__inner .email span {
   font-size: 24px;
   font-weight: 600;

@@ -3,13 +3,12 @@
     color: $cHeadline;
     border: .1px solid $cHighlight;
     font-size: 1.8em;
-    padding: 0.1em 0.7em;
+    padding: .1em .7em;
     border-radius: 20px;
     font-weight: 700;
     cursor: pointer;
 
     &:hover{
-        // opacity: .8;
         color: $cHighlight;
         background-color: $cHeadline;
     }
