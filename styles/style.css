@@ -291,7 +291,7 @@ main .aboutMe__inner .intro-part .logo__container a:hover {
 }
 main .aboutMe__inner .pic {
   text-align: center;
-  margin-top: 8em;
+  margin-top: 3em;
   position: relative;
   padding-bottom: 256px;
 }
@@ -505,6 +505,23 @@ main .contact__inner .contact-links .contact__inner-logos .sns:hover {
   main .aboveTheFold__inner .phrase {
     font-size: 3.5rem;
   }
+  main .aboutMe__inner .intro-part .intro-sentence {
+    font-size: 1.7em;
+  }
+  main .aboutMe__inner .pic {
+    margin-top: 6em;
+  }
+  main .aboutMe__inner .pic img {
+    width: 50%;
+    top: -40px;
+    left: 7em;
+  }
+  main .aboutMe__inner .pic .rectangle {
+    height: 20rem;
+    width: 45%;
+    top: -61px;
+    left: 64px;
+  }
   main .skills__contents {
     flex-direction: row;
     gap: 1em;
@@ -541,5 +558,29 @@ main .contact__inner .contact-links .contact__inner-logos .sns:hover {
   }
   main .contact__inner .contact-links span {
     font-size: 1.2em;
+  }
+}
+@media (min-width: 1280px) {
+  .header__inner .header-menu ul {
+    width: 80%;
+  }
+
+  main .aboutMe__inner {
+    flex-direction: row;
+  }
+  main .aboutMe__inner .intro-part {
+    width: 50%;
+  }
+  main .aboutMe__inner .intro-part .intro-sentence {
+    font-size: 1.7em;
+  }
+  main .aboutMe__inner .pic {
+    width: 60%;
+    margin-top: 10em;
+  }
+  main .aboutMe__inner .pic .rectangle {
+    height: 25rem;
+    width: 48%;
+    top: -65px;
   }
 }/*# sourceMappingURL=style.css.map */

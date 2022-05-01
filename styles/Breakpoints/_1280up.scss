@@ -1,15 +1,34 @@
 // Desktop
+.header{
+&__inner{
+    .header-menu{
+        ul{
+            width: 80%;
+        }
+    }
+}
+}
+
 main{
     .aboutMe{
-        %__inner{
+        &__inner{
             flex-direction: row;
 
-            .pic{
+            .intro-part{
                 width: 50%;
 
+                .intro-sentence{
+                    font-size: 1.7em;
+                }
+            }
+
+            .pic{
+                width: 60%;
+                margin-top: 10em;
                 .rectangle{
-                    height: 24rem;
-                    width: 56%;
+                    height: 25rem;
+                    width: 48%;
+                    top: -65px;
                 }
             }
         }
