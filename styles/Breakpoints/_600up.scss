@@ -47,22 +47,29 @@ main{
         &__inner{
             // flex-direction: row;
 
-            // .intro-part{
-            //     width: 50%;
+            .intro-part{
+                // width: 50%;
 
-            //     .intro-sentence{
-            //         font-size: 1.7em;
-            //     }
-            // }
+                .intro-sentence{
+                    font-size: 1.7em;
+                }
+            }
 
-            // .pic{
-            //     width: 50%;
+            .pic{
 
-            //     .rectangle{
-            //         height: 24rem;
-            //         width: 56%;
-            //     }
-            // }
+                img{
+                    width: 50%;
+                    top: -40px;
+                    left: 7em;
+                }
+                margin-top: 6em;
+                .rectangle{
+                    height: 20rem;
+                    width: 45%;
+                    top: -61px;
+                    left: 64px;
+                }
+            }
         }
     }
 
