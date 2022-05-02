@@ -66,7 +66,7 @@
 }
 
 .card {
-  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
   text-align: center;
   padding-bottom: 1em;
@@ -117,11 +117,20 @@ html {
 
 body {
   font-family: "Alumni Sans", sans-serif;
+  color: #2E2F3E;
 }
 
 img {
   max-width: 100%;
   vertical-align: bottom;
+}
+
+#word.darkMode {
+  color: #A7A9BE;
+}
+
+#logo.darkMode {
+  color: #A7A9BE;
 }
 
 .content-width, main .contact__inner, main .qualification__inner, main .projects__inner, main .aboutMe__inner {
@@ -173,15 +182,21 @@ h2 {
   width: 15%;
 }
 .header__inner .logo__name {
-  color: #FFFFFE;
+  color: #FFFFFE !important;
   font-size: 2rem;
   font-weight: bold;
 }
 .header__inner .header-menu {
   display: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.header__inner .header-menu ul {
+  align-items: center;
 }
 .header__inner .header-menu__item {
   list-style: none;
+  cursor: pointer;
 }
 .header__inner .header-menu__item:hover {
   transition: all 0.3s;
@@ -232,8 +247,11 @@ main .aboveTheFold__inner .phrase {
   color: #FFFFFE;
   letter-spacing: 0.1em;
 }
+main .aboveTheFold__inner .phrase.darkMode {
+  color: #A7A9BE;
+}
 main .aboveTheFold__inner .phrase .myName {
-  color: #FF8906;
+  color: #FF8906 !important;
   font-size: 1.5em;
   font-weight: 800;
 }
@@ -245,6 +263,9 @@ main .aboutMe {
   display: flex;
   justify-content: center;
   background-color: #FBFBF1;
+}
+main .aboutMe.darkMode {
+  background-color: #363537;
 }
 main .aboutMe__inner {
   width: 80%;
@@ -263,6 +284,9 @@ main .aboutMe__inner .intro-part .intro-sentence {
   gap: 1em;
   margin-bottom: 24px;
 }
+main .aboutMe__inner .intro-part .intro-sentence.darkMode {
+  color: #A7A9BE;
+}
 main .aboutMe__inner .intro-part .logo__container {
   display: flex;
   justify-content: space-between;
@@ -280,6 +304,9 @@ main .aboutMe__inner .intro-part .logo__container a:hover {
   opacity: 0.6;
   transform: scale(1.3);
   transition: all 0.3s;
+}
+main .aboutMe__inner .intro-part .logo__container a.darkMode {
+  color: #A7A9BE;
 }
 main .aboutMe__inner .pic {
   text-align: center;
@@ -312,6 +339,9 @@ main .skills {
   justify-content: center;
   padding-bottom: 32px;
 }
+main .skills.darkMode {
+  background-color: #4C4B4D;
+}
 main .skills__inner .title {
   text-align: center;
   margin: 0.5em;
@@ -341,6 +371,10 @@ main .skills__contents .skill-box .box-title {
   line-height: 1;
   background-color: #FDF5DF;
 }
+main .skills__contents .skill-box .box-title.darkMode {
+  color: #A7A9BE;
+  background-color: #4C4B4D;
+}
 main .skills__contents .skill-box .skill-list {
   width: 70%;
   display: flex;
@@ -359,6 +393,9 @@ main .projects {
   background-color: #FBFBF1;
   padding-top: 1em;
   padding-bottom: 32px;
+}
+main .projects.darkMode {
+  background-color: #363537;
 }
 main .projects__inner {
   display: flex;
@@ -381,6 +418,9 @@ main .qualification {
   padding-bottom: 32px;
   text-align: center;
 }
+main .qualification.darkMode {
+  background-color: #4C4B4D;
+}
 main .qualification__inner {
   font-size: 1.3rem;
 }
@@ -394,6 +434,9 @@ main .contact {
   background-color: #FBFBF1;
   padding-top: 1em;
   padding-bottom: 32px;
+}
+main .contact.darkMode {
+  background-color: #363537;
 }
 main .contact__inner {
   font-size: 1.3rem;
@@ -460,6 +503,9 @@ main .contact__inner .contact-links .contact__inner-logos .sns:hover {
   flex-direction: column;
   gap: 1em;
 }
+.footer.darkMode {
+  background-color: #4C4B4D;
+}
 .footer__name {
   font-size: 1.8em;
   font-weight: 600;
@@ -471,6 +517,7 @@ main .contact__inner .contact-links .contact__inner-logos .sns:hover {
   }
   .header__inner .header-menu {
     display: block;
+    display: flex;
     width: 60%;
   }
   .header__inner .header-menu ul {
