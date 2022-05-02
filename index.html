@@ -34,6 +34,7 @@
                             <li class="header-menu__item"><a href="#projectsSection">Projects</a></li>
                             <li class="header-menu__item"><a href="#qualificationSection">Qualifications</a></li>
                             <li class="header-menu__item"><a href="#contactSection">Contacts</a></li>
+                            <li class="header-menu__item"><i class="fa-solid fa-moon" style="color: #fffffe;" id="modeSwitchBtn"></i></li>
                         </ul>
                     </nav>
                 </div>
@@ -52,6 +53,7 @@
                             <li class="mobile-menu__item"><a href="#projectsSection">Projects</a></li>
                             <li class="mobile-menu__item"><a href="#qualificationSection">Qualifications</a></li>
                             <li class="mobile-menu__item"><a href="#contactSection">Contacts</a></li>
+                            <li class="mobile-menu__item"><i class="fa-solid fa-moon"></i></li>
                         </ul>
                     </nav>
                 </div>
@@ -60,7 +62,7 @@
                 <section class="aboveTheFold">
                     <div class="aboveTheFold__inner">
                         <div class="phrase">
-                            <span>I'm<span class="myName">Yuto</span><br/> Front-End-Developer<br/>Based in Vancouver</span>
+                            <span id="word">I'm<span class="myName">Yuto</span><br/> Front-End-Developer<br/>Based in Vancouver</span>
                         </div>
                         <div class="linkBtns">
                             <button class="btn" onclick="location.href='https://github.com/Ayut0?tab=repositories'">Github</button>
@@ -77,18 +79,18 @@
                         <div class="intro-part">
                             <h2 class="title">About Me</h2>
                             <div class="intro-sentence">
-                                <span>Hello, I’m Yuto Yamakita, Front-End Developer based in Vancouver. I’m passionate about building and designing user-friendly websites. I’ve learned solid knowledge in front-end languages and frameworks including HTML, CSS, JavaScript and React. <br> In addition, I’m good at solving  problem efficiently and working as a team.
+                                <span id="word">Hello, I’m Yuto Yamakita, Front-End Developer based in Vancouver. I’m passionate about building and designing user-friendly websites. I’ve learned solid knowledge in front-end languages and frameworks including HTML, CSS, JavaScript and React. <br> In addition, I’m good at solving  problem efficiently and working as a team.
                                         On my daily basis, I constantly learn new programming languages and brush up my skills.</span>
-                                    <span>Previously, I was working as a salesperson so I’m capable of communicating with team members smoothly and clients as well.</span>
-                                    <span>Other than web-development, I love traveling, <br> working out, and movies.</span>
+                                    <span id="word">Previously, I was working as a salesperson so I’m capable of communicating with team members smoothly and clients as well.</span>
+                                    <span id="word">Other than web-development, I love traveling, <br> working out, and movies.</span>
                             </div>
                             <div class="resumeBtn">
                                 <button class="btn" onclick="location.href='https://github.com/Ayut0?tab=repositories'">RESUME</button>
                             </div>
                             <div class="logo__container">
-                                <a href="mailto:yuvto.0420@gmail.com" class="fas fa-envelope fa-2x logo"></a>
-                                <a class="fab fa-linkedin fa-2x logo" href="https://www.linkedin.com/in/yutoyama" ></a>
-                                <a class="fab fa-github fa-2x logo" href="https://github.com/Ayut0"></a>
+                                <a href="mailto:yuvto.0420@gmail.com" class="fas fa-envelope fa-2x logo" id="logo"></a>
+                                <a class="fab fa-linkedin fa-2x logo" href="https://www.linkedin.com/in/yutoyama" id="logo"></a>
+                                <a class="fab fa-github fa-2x logo" href="https://github.com/Ayut0" id="logo"></a>
                             </div>
                         </div>
                     </div>
@@ -99,26 +101,26 @@
                         <div class="skills__contents">
                             <div class="languages skill-box">
                                 <span class="box-title">Languages</span>
-                                <span class="skill-list">HTML, CSS, JavaScript</span>
+                                <span class="skill-list" id="word">HTML, CSS, JavaScript</span>
                             </div>
                             <div class="framework skill-box">
                                 <span class="box-title">Frameworks & Libraries</span>
-                                <span class="skill-list">React, React Hooks, Styled-Components, Sass, Chart.js, jQuery, Tailwind.css, Bootstrap</span>
+                                <span class="skill-list" id="word">React, React Hooks, Styled-Components, Sass, Chart.js, jQuery, Tailwind.css, Bootstrap</span>
                             </div>
                             <div class="others skill-box">
                                 <span class="box-title">Others</span>
-                                <span class="skill-list">Git, Figma, Wordpress</span>
+                                <span class="skill-list" id="word">Git, Figma, Wordpress</span>
                             </div>
                         </div>
                         <div class="skill-logos">
-                            <i class="fa-brands fa-html5 fa-3x"></i>
-                            <i class="fa-brands fa-css3-alt fa-3x"></i>
-                            <i class="fa-brands fa-sass fa-3x"></i>
-                            <i class="fa-brands fa-js-square fa-3x"></i>
-                            <i class="fa-brands fa-react fa-3x"></i>
-                            <i class="fa-brands fa-github-square fa-3x"></i>
-                            <i class="fa-brands fa-figma fa-3x"></i>
-                            <i class="fa-brands fa-wordpress fa-3x"></i>
+                            <i class="fa-brands fa-html5 fa-3x" id="logo"></i>
+                            <i class="fa-brands fa-css3-alt fa-3x" id="logo"></i>
+                            <i class="fa-brands fa-sass fa-3x" id="logo"></i>
+                            <i class="fa-brands fa-js-square fa-3x" id="logo"></i>
+                            <i class="fa-brands fa-react fa-3x" id="logo"></i>
+                            <i class="fa-brands fa-github-square fa-3x" id="logo"></i>
+                            <i class="fa-brands fa-figma fa-3x" id="logo"></i>
+                            <i class="fa-brands fa-wordpress fa-3x" id="logo"></i>
                         </div>
                     </div>
                 </section>
@@ -132,12 +134,12 @@
                                     <img src="./images/Yutole_demo.png" alt="">
                                 </div>
                                 <div class="project-lang">
-                                    <div class="lang-box">HTML</div>
-                                    <div class="lang-box">Scss</div>
-                                    <div class="lang-box">JavaScript</div>
+                                    <div class="lang-box" id="word">HTML</div>
+                                    <div class="lang-box" id="word">Scss</div>
+                                    <div class="lang-box" id="word">JavaScript</div>
                                 </div>
                                 <div class="project-description">
-                                    <h4>Wordle clone with dark mode using JavaScript</h4>
+                                    <h4 id="word">Wordle clone with dark mode using JavaScript</h4>
                                 </div>
                                 <div class="project-links">
                                     <button class="btn" onclick="location.href='https://github.com/Ayut0/MyWordleClone.git'">View website</button>
@@ -150,13 +152,13 @@
                                     <img src="./images/Apple iMac Retina.png" alt="">
                                 </div>
                                 <div class="project-lang">
-                                    <div class="lang-box">React</div>
-                                    <div class="lang-box">React hooks</div>
-                                    <div class="lang-box">Tailwind.css</div>
-                                    <div class="lang-box">Firebase</div>
+                                    <div class="lang-box" id="word">React</div>
+                                    <div class="lang-box" id="word">React hooks</div>
+                                    <div class="lang-box" id="word">Tailwind.css</div>
+                                    <div class="lang-box" id="word">Firebase</div>
                                 </div>
                                 <div class="project-description">
-                                    <h4>Description about the project</h4>
+                                    <h4 id="word">Description about the project</h4>
                                 </div>
                                 <div class="project-links">
                                     <button class="btn" onclick="location.href='https://majestic-crisp-ba73a2.netlify.app/'">View website</button>
@@ -169,15 +171,15 @@
                                     <img src="./images/Apple iMac Retina.png" alt="">
                                 </div>
                                 <div class="project-lang">
-                                    <div class="lang-box">React</div>
-                                    <div class="lang-box">React hooks</div>
-                                    <div class="lang-box">Node.js</div>
-                                    <div class="lang-box">Express</div>
-                                    <div class="lang-box">MangoDB</div>
-                                    <div class="lang-box">Rapid API</div>
+                                    <div class="lang-box" id="word">React</div>
+                                    <div class="lang-box" id="word">React hooks</div>
+                                    <div class="lang-box" id="word">Node.js</div>
+                                    <div class="lang-box" id="word">Express</div>
+                                    <div class="lang-box" id="word">MangoDB</div>
+                                    <div class="lang-box" id="word">Rapid API</div>
                                 </div>
                                 <div class="project-description">
-                                    <h4>I wish I could be a MERN stack developer...</h4>
+                                    <h4 id="word">I wish I could be a MERN stack developer...</h4>
                                 </div>
                                 <div class="project-links">
                                     <button class="btn" onclick="location.href='https://github.com/Ayut0/MyWordleClone.git'">View website</button>
@@ -191,12 +193,12 @@
                     <div class="qualification__inner">
                         <h2 class="title">Education</h2>
                         <div class="education-detail">
-                            <h3>Cornerstone International Community College of Canada(CICCC)</h3>
-                            <span class="course-name">Web & Mobile App Development Diploma</span><br>
-                            <span class="duration">Jan. 2022 &#8764; Dec. 2022</span>
+                            <h3 id="word">Cornerstone International Community College of Canada(CICCC)</h3>
+                            <span class="course-name" id="word">Web & Mobile App Development Diploma</span><br>
+                            <span class="duration" id="word">Jan. 2022 &#8764; Dec. 2022</span>
                             <div class="location">
-                                <i class="fa-solid fa-location-dot"></i>
-                                <span>Vancouver, Canada</span>
+                                <i class="fa-solid fa-location-dot" id="logo"></i>
+                                <span id="word">Vancouver, Canada</span>
                             </div>
                         </div>
                     </div>
@@ -205,29 +207,30 @@
                     <div class="contact__inner">
                         <h2 class="title">Contact</h2>
                         <div class="appreciation-message">
-                            <span>Thank you for reading through my portfolio page. <br/> I'm always open to contact with anybody. I would like to hear from you.</span>
+                            <span id="word">Thank you for reading through my portfolio page. <br/> I'm always open to contact with anybody. I would like to hear from you.</span>
                         </div>
                         <div class="email">
-                            <a href="mailto:yuvto.0420@gmail.com" class="fas fa-envelope fa-lg logo"></a>
-                            <span><a href="mailto:yuvto.0420@gmail.com">yuvto.0420@gmail.com</a></span>
+                            <a href="mailto:yuvto.0420@gmail.com" class="fas fa-envelope fa-lg logo" id="logo"></a>
+                            <span><a href="mailto:yuvto.0420@gmail.com" id="word">yuvto.0420@gmail.com</a></span>
                         </div>
                         <div class="contact-links">
-                            <span>I'm also on</span>
+                            <span id="word">I'm also on</span>
                             <div class="contact__inner-logos">
-                                <a class="fab fa-linkedin sns fa-2xl" href="https://www.linkedin.com/in/yutoyama"></a>
-                                <a class="fab fa-github sns fa-2xl" href="https://github.com/Ayut0"></a>
-                                <a class="fab fa-instagram sns fa-2xl" href="https://www.instagram.com/i_am_3yut0/?hl=ja"></a>
-                                <a class="fab fa-twitter-square sns fa-2xl" href="https://twitter.com/home?lang=ja"></a>
+                                <a class="fab fa-linkedin sns fa-2xl" href="https://www.linkedin.com/in/yutoyama" id="logo"></a>
+                                <a class="fab fa-github sns fa-2xl" href="https://github.com/Ayut0" id="logo"></a>
+                                <a class="fab fa-instagram sns fa-2xl" href="https://www.instagram.com/i_am_3yut0/?hl=ja" id="logo"></a>
+                                <a class="fab fa-twitter-square sns fa-2xl" href="https://twitter.com/home?lang=ja" id="logo"></a>
                             </div>
                         </div>
                     </div>
                 </section>
             </main>
             <footer class="footer">
-                <span class="footer__name">Yuto Yamakita</span>
-                <span>Copyright &copy; 2022 Yuto Yamakita All rights Reserved</span>
+                <span class="footer__name" id="word">Yuto Yamakita</span>
+                <span id="word">Copyright &copy; 2022 Yuto Yamakita All rights Reserved</span>
             </footer>
         </div>
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>
