@@ -81,11 +81,10 @@ h2{
         }
 
         .header-menu{
-            display: none;
-            display: flex;
             justify-content: flex-end;
 
             ul{
+                display: none;
                 align-items: center;
             }
             &__item{
@@ -96,6 +95,7 @@ h2{
                     transition: all .3s;
                     opacity: .8;
                     transform: scale(1.2);
+                    color: $cHighlight;
                 }
                 a{
                     color: $cHeadline;
