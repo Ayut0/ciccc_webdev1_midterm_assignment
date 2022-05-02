@@ -1,5 +1,6 @@
 window.addEventListener("DOMContentLoaded", ()=>{
     let toggleBtn = document.querySelector("#modeSwitchBtn");
+    const mobileToggleBtn = document.querySelector("#MobileModeSwitchBtn");
     const aboutMeSection = document.querySelector("#aboutMeSection");
     const skillMeSection = document.querySelector("#skillsSection");
     const projectMeSection = document.querySelector("#projectsSection");
@@ -33,4 +34,5 @@ window.addEventListener("DOMContentLoaded", ()=>{
     }
 
     toggleBtn.addEventListener("click", switchTheme);
+    mobileToggleBtn.addEventListener("click", switchTheme);
 })

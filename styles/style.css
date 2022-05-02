@@ -38,6 +38,9 @@
 .mobile-menu__main ul {
   text-align: left;
   margin-left: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 .mobile-menu__main ul li {
   list-style: none;
@@ -48,6 +51,10 @@
   color: #FFFFFE;
   display: inline-block;
   font-size: 3rem;
+}
+.mobile-menu__main ul li:last-child {
+  color: #FFFFFE;
+  font-size: 2em;
 }
 
 .btn {
@@ -187,11 +194,10 @@ h2 {
   font-weight: bold;
 }
 .header__inner .header-menu {
-  display: none;
-  display: flex;
   justify-content: flex-end;
 }
 .header__inner .header-menu ul {
+  display: none;
   align-items: center;
 }
 .header__inner .header-menu__item {
@@ -202,6 +208,7 @@ h2 {
   transition: all 0.3s;
   opacity: 0.8;
   transform: scale(1.2);
+  color: #FF8906;
 }
 .header__inner .header-menu__item a {
   color: #FFFFFE;
