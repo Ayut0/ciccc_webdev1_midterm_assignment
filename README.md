@@ -2,5 +2,6 @@
  My Portfplio Website with HTML, Scss and JavaScript
  To show who I am, what I am capable of.
 
-##View Website
+## View Website
 https://yuto-portfolio.herokuapp.com/
+ 
