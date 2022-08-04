@@ -294,6 +294,13 @@ main .aboutMe__inner .intro-part .intro-sentence {
 main .aboutMe__inner .intro-part .intro-sentence.darkMode {
   color: #A7A9BE;
 }
+main .aboutMe__inner .intro-part .resumeBtn a {
+  text-decoration: none;
+  color: #FFFFFE;
+}
+main .aboutMe__inner .intro-part .resumeBtn a:hover {
+  color: #FF8906;
+}
 main .aboutMe__inner .intro-part .logo__container {
   display: flex;
   justify-content: space-between;
@@ -543,11 +550,9 @@ main .contact__inner .contact-links .contact__inner-logos .sns:hover {
   .header .mobile-menu__btn {
     display: none;
   }
-
   h2 {
     font-size: 60px;
   }
-
   main .aboveTheFold__inner {
     flex-direction: row;
   }
@@ -613,7 +618,6 @@ main .contact__inner .contact-links .contact__inner-logos .sns:hover {
   .header__inner .header-menu ul {
     width: 80%;
   }
-
   main .aboutMe__inner {
     flex-direction: row;
   }
